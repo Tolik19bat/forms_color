@@ -37,7 +37,7 @@ function HexToRgbConverter() {
 
     return (
         <div className="container">
-            <input className="input-style" type="text" value={hex} onChange={handleChange} placeholder="Введите HEX цвет" />
+            <input className="input-style" type="text" maxLength="7" value={hex} onChange={handleChange} placeholder="Введите HEX цвет" />
             {error && <p>Ошибка!</p>}
             {!error && <p>&nbsp;{rgb}</p>}
         </div>
