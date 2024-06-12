@@ -8,7 +8,9 @@ function HexToRgbConverter() {
     const [error, setError] = useState(false);
 
     const hexToRgb = (hex) => {
-        let r = 0, g = 0, b = 0;
+        let r = 0;
+        let g = 0;
+        let b = 0;
 
         if (hex.length === 7) {
             r = parseInt(hex.substring(1, 3), 16);
